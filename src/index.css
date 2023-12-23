@@ -71,3 +71,40 @@ html::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to left, black, black) !important;
     color: black;
   }
+
+  .slide-in-bottom {
+    animation: slideinbottom 1s ease-in-out;
+    max-height: 0px;
+    visibility: hidden;
+  }
+
+  @keyframes slideinbottom {
+    0% {
+      max-height: 1000px;
+      visibility: visible;
+    }
+    100% {
+      max-height: 0px; /* Adjust to a sufficiently large value */
+      visibility: hidden;
+    }
+  }
+
+  .slide-in-top {
+    animation: slideintop 1s ease-in-out;
+    max-height: 1000px;
+    visibility: visible;/* Adjust to a sufficiently large value */
+  }
+  
+  @keyframes slideintop {
+    0% {
+      max-height: 0;
+      visibility: hidden;
+    }
+    100% {
+      max-height: 1000px; /* Adjust to a sufficiently large value */
+      visibility: visible;
+    }
+  }
+
+  
+  

@@ -17,7 +17,7 @@ const vids = [vid1, vid2, vid3, vid4, vid5, vid6];
 export default function Portfolio() {
   const screenSize = useScreenSize();
   return (
-    <div className="mx-5 mb-36">
+    <div id="portfolio" className="mx-5 mb-36">
       <h1 className="text-[30px] md:text-[55px] font-medium tracking-tight leading-[32px] md:leading-[60px]">
         We create the highest quality content for brands.{" "}
         <LinearGradient gradient={["to right", "#ffb701 ,#ff341e"]}>

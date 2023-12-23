@@ -17,13 +17,13 @@ export default function App() {
           alt="GrowthRocketLogo"
           className="h-10"
         />
-        <ul className="flex justify-between gap-10 text-[22px] items-center">
-          <li>Portfolio</li>
-          <li>Results</li>
-          <li>Pricing</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
+        <div className="flex justify-between gap-10 text-[22px] items-center">
+          <a href="/#portfolio">Portfolio</a>
+          <a>Results</a>
+          <a>Pricing</a>
+          <a>Services</a>
+          <a>Contact</a>
+        </div>
       </nav>
       <FirstSection />
       <Portfolio />
