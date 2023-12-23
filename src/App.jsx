@@ -4,10 +4,13 @@ import Portfolio from "./sections/Portfolio";
 import Results from "./sections/Results";
 import Price from "./sections/Price";
 import Faq from "./sections/Faq";
+import Services from "./sections/Services";
+import ContactPage from "./sections/ContactPage";
+import Footer from "./sections/Footer";
 
 export default function App() {
   return (
-    <div className="mx-40 my-8 font-sans text-white">
+    <div className="md:mx-40 mx-4 my-8 font-sans text-white">
       <nav className="flex w-full justify-between items-center">
         <img
           src="https://growthrocket.media/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1a5c9263.png&w=3840&q=75"
@@ -27,6 +30,9 @@ export default function App() {
       <Results />
       <Price />
       <Faq />
+      <Services />
+      <ContactPage />
+      <Footer />
     </div>
   );
 }

@@ -20,6 +20,15 @@ html::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2ex;
 }
 
+.scrollable-div::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #ffb701, #ff341e);
+  -webkit-border-radius: 2ex;
+}
+
 
 @keyframes bounce-left {
     0%, 20%, 50%, 80%, 100% {
@@ -55,4 +64,10 @@ html::-webkit-scrollbar-thumb {
 
   .custom-shadow {
     box-shadow: 0 3px 10px rgb(255, 183, 1);
+  }
+
+
+  .backCard:hover {
+    background-image: linear-gradient(to left, black, black) !important;
+    color: black;
   }

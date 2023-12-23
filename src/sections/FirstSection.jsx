@@ -49,10 +49,10 @@ export default function FirstSection() {
     loop: {},
   });
   return (
-    <div className="text-white my-44 mx-5">
-      <div className="flex justify-between">
+    <div className="text-white md:my-44 my-24 mx-0">
+      <div className="flex md:flex-row flex-col justify-between">
         <div className="">
-          <h1 className="text-[80px] font-[400] tracking-wide leading-[85px]">
+          <h1 className="md:text-[9vh] text-[4vh] font-[400] tracking-wide leading-[40px] md:leading-[85px]">
             Create <br /> Content That <br />
             <span className="font-[600]">
               <LinearGradient gradient={["to right", "#ffb701 ,#ff341e"]}>
@@ -61,41 +61,42 @@ export default function FirstSection() {
               <Cursor cursorColor="#ff341e" />
             </span>
           </h1>
-          <button className="my-10 bg-gradient-to-br from-yellow-500 to-red-600 text-black font-semibold px-7 py-2.5 text-2xl rounded">
+          <button className="my-10 bg-gradient-to-br from-yellow-500 to-red-600 text-black font-semibold md:px-7 px-3 md:py-2.5 py-1.5 md:text-2xl text-md rounded">
             Go Viral
           </button>
         </div>
 
-        <div className="">
-          <div className="w-56 h-56 relative bottom-24 right-72">
+        <div className="relative left-[350px] top-32 md:top-0 md:left-0">
+          <div className="md:w-56 w-32 md:h-56 h-32 relative md:bottom-24 bottom-32 right-72">
             <ImageCubeEffect
               images={images[1]}
-              style={"h-56 w-full object-cover rounded-full"}
+              style={"md:h-56 h-32 w-full object-cover rounded-full"}
             />
           </div>
-          <div className="h-48 w-48 relative bottom-56 right-0">
+          <div className="h-28 md:h-48 w-28 md:w-48 relative bottom-56 right-28 md:right-0">
             <ImageCubeEffect
               images={images[2]}
-              style={"h-48 w-full object-cover rounded-full"}
+              style={"md:h-48 h-28 w-full object-cover rounded-full"}
             />
           </div>
-          <div className="w-64 h-64 relative bottom-56 right-56">
+          <div className="w-44 md:w-64 h-44 md:h-64 relative bottom-56 right-56">
             <ImageCubeEffect
               images={images[3]}
-              style={"h-64 w-64 object-cover rounded-full"}
+              style={"md:h-64 h-44 w-44 md:w-64 object-cover rounded-full"}
             />
           </div>
         </div>
       </div>
 
       <div className="my-16">
-        <h1 className="text-6xl font-medium tracking-tight">
+        <h1 className="text-3xl md:text-6xl font-medium tracking-tight">
           Brands That{" "}
           <LinearGradient gradient={["to right", "#ffb701 ,#ff341e"]}>
             Trust Us
           </LinearGradient>
         </h1>
         <TwoCardsEffect
+          rotate={"rotate-[2deg]"}
           children={
             <Swiper
               loop={true}

@@ -68,16 +68,18 @@ export default function Price() {
           Viral Brand
         </LinearGradient>
       </h1>
-      <div className="flex gap-6 text-black">
+      <div className="container flex gap-6 text-black overflow-x-auto whitespace-nowrap py-6">
         <div className="bg-white border-[7px] border-[#ffb701] flex-1 rounded-[13px] p-7">
-          <div className="flex items-center gap-4 ">
-            <h1 className="text-4xl font-semibold pb-5">Sky Rocket</h1>
+          <div className="flex-1 flex items-center gap-4 ">
+            <h1 className="text-2xl md:text-4xl font-semibold pb-5">
+              Sky Rocket
+            </h1>
             <Lottie animationData={NightSky} className="h-[75px] pb-5"></Lottie>
           </div>
           <p className="text-xl opacity-70 pb-4">&#8377;50,000 per month</p>
           <div className="text-xl">
             {SkyRocket.map((e, i) => (
-              <div className="my-3 flex items-center gap-5">
+              <div className="my-3 flex items-center gap-5 ">
                 <img
                   src={
                     !SkNo.includes(i + 1)
@@ -87,7 +89,7 @@ export default function Price() {
                   className="h-8"
                   alt=""
                 />
-                <p className="">{e}</p>
+                <p className="text-lg pr-7 md:pr-0">{e}</p>
               </div>
             ))}
           </div>
@@ -100,12 +102,14 @@ export default function Price() {
             />
           </button>
         </div>
-        <div className="bg-white border-[7px] border-[#ffb701] flex-1 rounded-[13px] p-7">
+        <div className="bg-white border-[7px] border-[#ffb701] flex-1 rounded-[13px] p-7 overflow-visible">
           <p className="bg-gradient-to-r from-yellow-500 to-red-600 w-fit px-3 py-2 -mt-[50px] rounded-lg text-lg font-medium text-white tracking-wide">
             Best For Growing Brands
           </p>
           <div className="flex  items-center gap-4 ">
-            <h1 className="text-4xl font-semibold pb-5">Moon Rocket</h1>
+            <h1 className="md:text-4xl text-2xl font-semibold  pb-5">
+              Moon Rocket
+            </h1>
             <Lottie
               animationData={ShootingStar}
               className="h-[75px] pb-5"
@@ -124,7 +128,7 @@ export default function Price() {
                   className="h-8"
                   alt=""
                 />
-                <p className="">{e}</p>
+                <p className="text-lg pr-2 md:pr-0">{e}</p>
               </div>
             ))}
           </div>
@@ -137,12 +141,15 @@ export default function Price() {
             />
           </button>
         </div>
+
         <div className="bg-white border-[7px] border-[#ffb701] flex-1 rounded-[13px] p-7">
           <p className="bg-gradient-to-r from-yellow-500 to-red-600 w-fit px-3 py-2 -mt-[50px] rounded-lg text-lg font-medium text-white tracking-wide">
             Best For Growing Brands
           </p>
           <div className="flex  items-center gap-4 ">
-            <h1 className="text-[34px] font-semibold pb-5">Milky Way Rocket</h1>
+            <h1 className="text-2xl md:text-[34px] font-semibold pb-5">
+              Milky Way Rocket
+            </h1>
             <Lottie animationData={wings} className="h-[75px] pb-5"></Lottie>
           </div>
           <p className="text-xl opacity-70 pb-4">&#8377;50,000 per month</p>
@@ -158,7 +165,7 @@ export default function Price() {
                   className="h-8"
                   alt=""
                 />
-                <p className="">{e}</p>
+                <p className="text-lg pr-2 md:pr-0">{e}</p>
               </div>
             ))}
           </div>

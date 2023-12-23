@@ -13,20 +13,20 @@ export default function Results() {
         </LinearGradient>{" "}
       </h1>
       <div>
-        <div className="w-[71%]">
+        <div className="md:w-[71%] w-full">
           <TiltCard
             image={"https://growthrocket.media/brands/fisdom.svg"}
             title={"1100% increase in views within 45 days"}
             para={
               "Fisdom's Instagram reels used to get an average of 300-400 organic views. After partnering with us, their average views on reels skyrocketed to 3500 in less than 45 days."
             }
-            imgStyle={"h-8"}
+            imgStyle={"h-fit"}
             imgContainerStyle={
-              "bg-[#ecc86c] h-44 w-96 flex justify-center items-center p-3 rounded-md "
+              "bg-[#ecc86c] md:py-20 py-24 md:m-0 m-6 w-fit flex justify-center items-center p-3 rounded-md"
             }
           />
         </div>
-        <div className="w-[71%] relative left-96">
+        <div className="md:w-[71%] w-full  relative md:left-96">
           <TiltCard
             image={
               "https://growthrocket.media/_next/image?url=%2Fresult_formula.JPG&w=256&q=75"
@@ -35,13 +35,13 @@ export default function Results() {
             para={
               "Formula Guy’s personal brand page gained over 50,000 followers and over 5 million views in less than 6 months. Growth Rocket helped build his personal brand from day 1 of his journey."
             }
-            imgStyle={"h-[165px] object-cover"}
+            imgStyle={"md:h-[165px] h-fit object-cover"}
             imgContainerStyle={
-              "bg-[#ecc86c] h-44 w-96 flex justify-center items-center p-1 rounded-md "
+              "bg-[#ecc86c] h-full m-3 md:m-0 h-full md:h-44 md:w-96 flex justify-center items-center p-1 rounded-md "
             }
           />
         </div>
-        <div className="w-[71%]">
+        <div className="md:w-[71%] w-full">
           <TiltCard
             image={"https://growthrocket.media/rangde.svg"}
             title={"800% more virality and 6x growth in average views"}
@@ -50,12 +50,12 @@ export default function Results() {
             }
             imgStyle={"h-[125px] object-cover"}
             imgContainerStyle={
-              "bg-[#ecc86c] h-44 w-[65%] flex justify-center items-center p-1 rounded-md "
+              "bg-[#ecc86c] h-44 md:w-full w-[65%] m-3 md:m-0 flex justify-center items-center p-1 rounded-md "
             }
           />
         </div>
       </div>
-      <div className="flex gap-24 my-44">
+      <div className="flex md:flex-row flex-col-reverse gap-24 my-44">
         <div className="rounded-md bg-gradient-to-br from-yellow-500 to-red-600 -rotate-[5deg]">
           <img
             src="https://growthrocket.media/_next/image?url=%2Freel_thumb.jpg&w=1920&q=75"
@@ -64,10 +64,10 @@ export default function Results() {
           />
         </div>
         <div className="w-[90%]">
-          <p className="text-red-600 text-2xl leading-[70px]">
+          <p className="text-red-600 text-lg md:text-2xl md:leading-[70px] leading-[24px] mb-5 md:mb-0">
             IF YOUR BUSINESS ISN'T ON INSTAGRAM, IT SHOULD BE.
           </p>
-          <h1 className="text-[55px] font-medium tracking-normal leading-[60px]">
+          <h1 className="md:text-[55px] text-[40px] font-medium tracking-normal leading-[40px] md:leading-[60px]">
             If your business is on <br /> Instagram,
             <LinearGradient gradient={["to right", "#ffb701 ,#ff341e"]}>
               {" "}
@@ -87,8 +87,10 @@ export default function Results() {
       </div>
       <div>
         <TwoCardsEffect
+          rotate1={"-rotate-[2deg]"}
+          rotate2={"rotate-[2deg]"}
           children={
-            <h1 className="text-5xl font-semibold text-center py-10 text-black">
+            <h1 className="text-xl md:text-5xl font-semibold text-center py-10 px-2 md:px-0 text-black">
               Full Refund If We Dont Beat Your Current Views
             </h1>
           }

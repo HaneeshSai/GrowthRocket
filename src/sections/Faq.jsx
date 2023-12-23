@@ -1,4 +1,6 @@
 import React from "react";
+import up from "../assets/arrows/up.png";
+import FaqCard from "../components/FaqCard";
 
 const FAqs = [
   {
@@ -30,14 +32,13 @@ const FAqs = [
 export default function Faq() {
   return (
     <div className="mt-[120px]">
-      <h1 className="text-7xl font-bold tracking-wide mb-6xl">FAQs</h1>
-      <div>
-        <div className="flex">
-          <div className="flex-1">
-            <h1>{FAqs[0].q}</h1>
-          </div>
-          <div className="flex-1"></div>
-        </div>
+      <h1 className="text-5xl md:text-7xl font-bold tracking-wide mb-8">
+        FAQs
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7 gap-y-0">
+        {FAqs.map((e, i) => (
+          <FaqCard question={e.q} answer={e.a} />
+        ))}
       </div>
     </div>
   );
