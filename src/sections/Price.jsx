@@ -79,7 +79,7 @@ export default function Price() {
           <p className="text-xl opacity-70 pb-4">&#8377;50,000 per month</p>
           <div className="text-xl">
             {SkyRocket.map((e, i) => (
-              <div className="my-3 flex items-center gap-5 ">
+              <div key={i} className="my-3 flex items-center gap-5 ">
                 <img
                   src={
                     !SkNo.includes(i + 1)
@@ -118,7 +118,7 @@ export default function Price() {
           <p className="text-xl opacity-70 pb-4">&#8377;50,000 per month</p>
           <div className="text-xl">
             {MoonRocket.map((e, i) => (
-              <div className="my-3 flex items-center gap-5">
+              <div key={i} className="my-3 flex items-center gap-5">
                 <img
                   src={
                     !MrNo.includes(i + 1)
